@@ -1,0 +1,45 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>eto moi site</title>
+    <link rel="stylesheet" href="style.css">
+    
+    
+    </head>
+<body>
+    <table width="800" align="center">
+    <tr>
+        <td>
+            <table width="790" height="200">
+                <tr>
+                    <th>
+    <ul id="slides">
+    <li class="slide showing"><img src="1600px-%D0%9E%D0%B1%D0%BE%D0%B8_%D0%B6%D0%BD%D0%B5%D1%86_9.png" height="100" widht="785"></li>
+      <li class="slide showing"><img src="Overwatch-Reaper-Overwatch-Blizzard-Entertainment-darkness-screenshot-computer-wallpaper-38872.jpg" height="1000" widht="785"></li>
+    
+      <li class="slide showing"><img src="3d-overwatch-logo-widescreen-wallpaper-62852-64856-hd-wallpapers.jpg" height="1000" widht="785"></li>
+
+    
+    </ul>
+                    </th>
+                </tr>
+        
+    </table>
+    <script>
+    var slides = document.querySelectorAll('#slides .slide');
+        var currentSlide = 0;
+        var slideInterval = setInterval(nextSlide,2000)
+    function nextSlide() {
+        slides[currentSlide].className = 'slide';
+        currentSlide = (currentSlide+1)%slides.length;
+        slides[currentSlide].className = 'slide showing';
+        
+    }
+    
+    
+    </script>
+    
+    </body>
+
+
+</html>
